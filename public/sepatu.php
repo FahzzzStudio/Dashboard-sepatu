@@ -46,7 +46,7 @@ $sepatu = allsepatu($conn);
                         <td class="px-4 py-2 text-left"><?= $row["stok"] ?></td>
                         <!-- <td><?= $row["harga"] ?></td> -->
                         <td class="px-4 py-2 text-left">Rp <?= number_format($row['harga'],0,',','.'); ?></td>
-                        <td>
+                        <td class="px-4 py-2 space-x-2">
                             <a href="edit.php?id=<?= $row['id_sepatu']; ?>" class="btn btn-success">Edit</a>
                             <a href="hapus.php?id=<?= $row['id_sepatu']; ?>" class="btn btn-danger">Hapus</a>
                         </td>
